@@ -53,10 +53,8 @@ public class Main extends PApplet {
             //esto es para que te lea el raton por donde pasas
             stroke(201,41,255);
             fill(225,247,41);
-            ellipse(mouseY, mouseX, 100, 100);
-            stroke(245,44,86);
-            fill(145,251,66);
-            rect(mouseX, mouseY, 50, 50);
+            ellipse(mouseX, 15, 100, 100);
+
         }
     }
 
