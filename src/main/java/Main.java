@@ -1,6 +1,6 @@
 import processing.core.PApplet;
 
-import static processing.core.PConstants.P2D;
+
 
 public class Main extends PApplet {
 
@@ -30,13 +30,16 @@ public class Main extends PApplet {
 
         @Override
         public void draw() {
-            // pintamos la ventana según rgb
+            // pintamos el fondo
 
             background(20, 247, 201 );
+            //elegimos el color del borde
             stroke(255, 255, 255);
+            /* elegimos el color del interior , se aplica a las formas de debajo hasta el siguiente fill */
             fill(0,255,0);
             rect(0,300,640,100);
             fill(255,255,255);
+            //dibuja un circulo
             ellipse(200,100,100,100);
             ellipse(240,105,100,100);
             ellipse(160,75,100,100);
@@ -49,6 +52,7 @@ public class Main extends PApplet {
             ellipse(410,140,100,100);
             ellipse(450,120,100,100);
             fill(173,105,0);
+            //dibuja un cuadrado
             rect(420,190,10,120);
             //esto es para que te lea el raton por donde pasas
             stroke(201,41,255);
